@@ -1,5 +1,0 @@
-[miradb]
-name=Mira Database Server
-baseurl=https://miradb.com/dist/
-enabled=1
-gpgcheck=0

@@ -23,25 +23,10 @@
 	  })
 	  
 
-	  $( "#win64" ).click(function() {
-		window.location.href = "https://github.com/Nodeclient/Mira-DB/releases/download/windows/miradb-0.24-win-x64.zip";
+	  $( "#docs" ).click(function() {
+		window.location.href = "https://miradb.com/docs";
 	  });
 
-	  $( "#win86" ).click(function() {
-		window.location.href = "https://github.com/Nodeclient/Mira-DB/releases/download/windows/miradb-0.24-win-x86.zip";
-	  });
-
-	  $( "#lin86" ).click(function() {
-		window.location.href = "installx86.html";
-	  });
-
-	  $( "#lin64" ).click(function() {
-		window.location.href = "installx64.html";
-	  });
-
-	  $( "#mac" ).click(function() {
-		window.location.href = "https://github.com/Nodeclient/Mira-DB/releases";
-	  });
 
   	/* --------------------------------------------------- */
 	/*  Placeholder Plugin Settings

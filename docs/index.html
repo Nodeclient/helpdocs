@@ -720,8 +720,8 @@ if(result["db"]=="*"){
 <h5>Example Usage</h5>
 <p></p>
 <button class="btn btn-primary" onclick="openOS('JS_DELCOL','DELETE')">COLUMN</button>
-<button class="btn btn-primary" onclick="openOS('JS_DELROW','DELETE')">ROW</button>
-<button class="btn btn-primary" onclick="openOS('JS_DELROWIN','DELETE')">ROW (INDEX)</button>
+<button class="btn btn-primary" onclick="openOS('JS_DELROW','DELETE')">ROW (value)</button>
+<button class="btn btn-primary" onclick="openOS('JS_DELROWIN','DELETE')">ROW (index)</button>
 </div>
 
 <div id="JS_DELCOL" class="section-block DELETE" >
@@ -735,7 +735,7 @@ if(result["db"]=="*"){
     
 <div id="JS_DELROW" class="section-block DELETE" style="display:none">
 <p> to delete a selected record in table </p>
-<pre><code class="language-js">db.query("DELETE ROW user COLUMN pass VALUE ["1234"];",function(data,err){ 
+<pre><code class="language-js">db.query("DELETE ROW USER COLUMN user VALUE ["fung"];",function(data,err){ 
     console.log(data); 
 });</code></pre>
 <h2>Result:</h2>

@@ -59,7 +59,7 @@
                                 <div class="section-block">
                                     <p> Welcome , The MIRA-DB It is open source (OODBMS) distributed free of charge under the
                                         terms of the MIT License.</p>
-                                    <p><i class="fa fa-check" aria-hidden="true"></i> <b>Download (@0.24 Releases)</b> for Your Preferred Platform.</p> 
+                                    <p><i class="fa fa-check" aria-hidden="true"></i> <b>Download (@0.25 Releases)</b> for Your Preferred Platform.</p> 
                                    
                                     <div class="block-title">
                                         <button class="btn btn-primary" onclick="openOS('winsetup','releases')">Windows</button>
@@ -76,12 +76,12 @@
 
                                     <div id="linuxsetup" class="section-block releases"  style="display:none">
                                         <h3>Linux Downloads</h3>
-                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-1.0.24-x86.deb" class="btn btn-green" target="_blank"><i class="fas fa-server"></i>DEBIAN-x86</a>
-                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-1.0.24-x64.deb" class="btn btn-primary" target="_blank"><i class="fas fa-server"></i>DEBIAN-x64</a>
-                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-1.0.24-x86.rpm" class="btn btn-green" target="_blank"><i class="fas fa-server"></i>RPM-x86</a>
-                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-1.0.24-x64.rpm" class="btn btn-primary" target="_blank"><i class="fas fa-server"></i>RPM-x64</a>
-                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x86-1.0.24.tar.gz" class="btn btn-green" target="_blank"><i class="fas fa-server"></i>TAR-x86</a>
-                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x64-1.0.24.tar.gz" class="btn btn-primary" target="_blank"><i class="fas fa-server"></i>TAR-x64</a>                
+                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x86-1.0.25.deb" class="btn btn-green" target="_blank"><i class="fas fa-server"></i>DEBIAN-x86</a>
+                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x64-1.0.25.deb" class="btn btn-primary" target="_blank"><i class="fas fa-server"></i>DEBIAN-x64</a>
+                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x86-1.0.25.rpm" class="btn btn-green" target="_blank"><i class="fas fa-server"></i>RPM-x86</a>
+                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x64-1.0.25.rpm" class="btn btn-primary" target="_blank"><i class="fas fa-server"></i>RPM-x64</a>
+                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x86-1.0.25.tar.gz" class="btn btn-green" target="_blank"><i class="fas fa-server"></i>TAR-x86</a>
+                                        <a href="https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x64-1.0.25.tar.gz" class="btn btn-primary" target="_blank"><i class="fas fa-server"></i>TAR-x64</a>                
                                     </div>
 
                                     <div id="macsetup" class="section-block releases"  style="display:none">
@@ -120,13 +120,13 @@
 <pre><code class="language-Bash">
 sudo mkdir /home/miradb
 cd /home/miradb
-sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x64-1.0.24.tar.gz
+sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x64-1.0.25.tar.gz
 sudo tar xvzf miradb-x64-1.0.24.tar.gz
 sudo chmod 777 miradb
 sudo chmod 777 service
 sudo chmod 777 run
 sudo ./service 
-sudo rm miradb-x64-1.0.24.tar.gz
+sudo rm miradb-x64-1.0.25.tar.gz
 
 </code></pre>
 <h2>Terminal Command</h2>	
@@ -138,13 +138,13 @@ sudo rm miradb-x64-1.0.24.tar.gz
 <pre><code class="language-Bash">
 sudo mkdir /home/miradb
 cd /home/miradb
-sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x86-1.0.24.tar.gz
+sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x86-1.0.25.tar.gz
 sudo tar xvzf miradb-x86-1.0.24.tar.gz
 sudo chmod 777 miradb
 sudo chmod 777 service
 sudo chmod 777 run
 sudo ./service 
-sudo rm miradb-x86-1.0.24.tar.gz
+sudo rm miradb-x86-1.0.25.tar.gz
                                         
 </code></pre>
 <h2>Terminal Command</h2>	
@@ -156,7 +156,7 @@ sudo rm miradb-x86-1.0.24.tar.gz
 <p></p>
 <h5>DEBIAN-INSTALL-x64</h5>
 <pre><code class="language-Bash">
-sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-1.0.24-x64.deb
+sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x64-1.0.25.deb
 sudo dpkg -i miradb-1.0.24-x64.deb
 sudo chmod 777 /home/miradb/miradb
 sudo chmod 777 /home/miradb/service
@@ -166,7 +166,7 @@ sudo /home/miradb/service
 </code></pre>
 <h5>DEBIAN-INSTALL-x86</h5>
 <pre><code class="language-Bash">
-sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-1.0.24-x86.deb
+sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x86-1.0.25.deb
 sudo dpkg -i miradb-1.0.24-x86.deb
 sudo chmod 777 /home/miradb/miradb
 sudo chmod 777 /home/miradb/service
@@ -183,7 +183,7 @@ sudo /home/miradb/service
 <p></p>
 <h5>RPM-INSTALL-x64</h5>
 <pre><code class="language-Bash">
-sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-1.0.24-x64.rpm
+sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x64-1.0.25.rpm
 sudo rpm -i miradb-1.0.24-x64.rpm
 sudo chmod 777 /home/miradb/miradb
 sudo chmod 777 /home/miradb/service
@@ -193,7 +193,7 @@ sudo /home/miradb/service
 </code></pre>
 <h5>RPM-INSTALL-x86</h5>
 <pre><code class="language-Bash">
-sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-1.0.24-x86.rpm
+sudo wget https://github.com/Nodeclient/Mira-DB/releases/download/linux/miradb-x86-1.0.25.rpm
 sudo rpm -i miradb-1.0.24-x86.rpm
 sudo chmod 777 /home/miradb/miradb
 sudo chmod 777 /home/miradb/service
@@ -327,59 +327,59 @@ sudo /home/miradb/service
 <pre>
 <code class="language-javascript"> 
 // MIRA-DB EXPRESS REMOTE DATABASE
-    var bodyParser = require("body-parser");
-    var express = require('express');
-    var mira = require('mira-db');
-    var UserData = require('mira-db/userdata');
-    var app = express();
+var bodyParser = require(&#x22;body-parser&#x22;);
+// Express Build ver. (express@5.0.0-alpha.7)
+var express = require(&#x27;express&#x27;);
+var mira = require(&#x27;mira-db&#x27;);
+var UserData = require(&#x27;mira-db/userdata&#x27;);
+var app = express();
+var USR_PERM = {};
 
-    var USR_PERM = {};
 // SET YOUR STORAGE FOLDER
-    var DB_DIR = "./data";
+var DB_DIR = &#x22;./data&#x22;;
 
-    app.use(express.static('public'));
-    app.use(bodyParser.json());
-    app.use(bodyParser.urlencoded({ extended: true }));
-    app.use(function (req, res, next) { next(); });
+app.use(express.static(&#x27;public&#x27;));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', function (req, res, next){
-    res.sendFile( process.cwd() +'/public/index.html');
+app.get(&#x27;/&#x27;, function (req, res, next) {
+    res.sendFile( process.cwd()+&#x27;/public/index.html&#x27;);
 });
 
-app.post('/query', function (req, res, next){
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-    res.setHeader('Access-Control-Allow-Credentials', true);
+app.post(&#x27;/query&#x27;, function (req, res, next) {
+        res.setHeader(&#x27;Access-Control-Allow-Origin&#x27;, &#x27;*&#x27;);
+        res.setHeader(&#x27;Access-Control-Allow-Methods&#x27;, &#x27;GET, POST, OPTIONS, PUT&#x27;);
+        res.setHeader(&#x27;Access-Control-Allow-Headers&#x27;, &#x27;X-Requested-With,content-type&#x27;);
+        res.setHeader(&#x27;Access-Control-Allow-Credentials&#x27;, true);
 
-    var DB_NAME = req.body["db"];
-    var DB_USER = req.body["user"];
-    var DB_PASS = req.body["pass"];
-    var DB_QUERY = req.body["query"];
-    var expressDB = new mira(DB_DIR,"UTF-8");
+    var DB_RESULT = null;
+    var DB_NAME = req.body[&#x22;db&#x22;];
+    var DB_USER = req.body[&#x22;user&#x22;];
+    var DB_PASS = req.body[&#x22;pass&#x22;];
+    var DB_QUERY = req.body[&#x22;query&#x22;];
+    var expressDB = new mira(DB_DIR, &#x22;UTF-8&#x22;);
 
-var LOGIN_DATA = UserData.LoadLoginData("user.conf");
-if(LOGIN_DATA[0]){
-    var result = UserData.Login( DB_USER , DB_PASS , LOGIN_DATA ) ;
-    var USR_PERM = UserData.LoadPermsData(result["perm"]+".perm");
-if (result){
-if(result["db"]=="*"){
-    var DB_RESULT = expressDB.Query(DB_QUERY,DB_NAME,USR_PERM);
-    res.send(DB_RESULT);
-} else {
-    var DB_RESULT = expressDB.Query(DB_QUERY,result["db"],USR_PERM);
-    res.send(DB_RESULT);
-}
-}else{
-    res.status(401).send([false,"LOGIN_ERROR","INVALID USERNAME OR PASSWORD",0]);
-}
-} else {
-    res.status(500).send([false,"SERVER_ERROR","INVALID CONF FILE",100]);
-}
+    var LOGIN_DATA = UserData.LoadLoginData(&#x22;user.conf&#x22;);
+    if (LOGIN_DATA[0]) {
+        var result = UserData.Login(DB_USER, DB_PASS, LOGIN_DATA);
+        var USR_PERM = UserData.LoadPermsData(result[&#x22;perm&#x22;] + &#x22;.perm&#x22;);
+        if (result) {
+            if (result[&#x22;db&#x22;] == &#x22;*&#x22;) {
+                 DB_RESULT = expressDB.Query(DB_QUERY, DB_NAME, USR_PERM);;
+            } else {
+                 DB_RESULT = expressDB.Query(DB_QUERY, result[&#x22;db&#x22;], USR_PERM);
+            }
+            res.status(200).send(DB_RESULT);
+        } else {
+            res.status(401).send([false,&#x22;LOGIN_ERROR&#x22;,&#x22;INVALID USERNAME OR PASSWORD&#x22;,0]);
+        }
+    } else {
+            res.status(500).send([false, &#x22;SERVER_ERROR&#x22;, &#x22;INVALID CONF FILE&#x22;, 100]);
+    }
 });
 // YOU CAN CHANGE THE PORT
-    var server = app.listen(8123);
-    console.log("MIRA DB RUNNING PORT:8123")
+var server = app.listen(8123);
+console.log(&#x22;MIRA-DB 1.0.25 - PORT:8123&#x22;)
 
 </code></pre>
 </div>

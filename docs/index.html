@@ -712,7 +712,7 @@ console.log(&#x22;MIRA-DB 1.0.25 - PORT:8123&#x22;)
 <div class="code-block">
 <h6 class="section-title">MiraQuery : DELETE</h6>
 <br>
-<pre><code class="language-Sql">DELETE COLUMN &#x3C;COLUMN_NAME&#x3E; TABLE &#x3C;TABLE_NAME&#x3E;;</code></pre>
+<pre><code class="language-Sql">DELETE COLUMN [COLUMN_NAME] TABLE &#x3C;TABLE_NAME&#x3E;;</code></pre>
 <pre><code class="language-Sql">DELETE ROW &#x3C;TABLE_NAME&#x3E; COLUMN &#x3C;COLUMN_NAME&#x3E; VALUE [&#x22;SEARCH_STRING&#x22;];</code></pre>
 <pre><code class="language-Sql">DELETE ROW &#x3C;TABLE_NAME&#x3E; INDEX &#x3C;INDEX_NUMBER&#x3E;;</code></pre>    
 </div>
@@ -727,7 +727,7 @@ console.log(&#x22;MIRA-DB 1.0.25 - PORT:8123&#x22;)
 
 <div id="JS_DELCOL" class="section-block DELETE" >
 <p> to delete a column in table</p>
-<pre><code class="language-js">db.query("DELETE COLUMN mail TABLE user;",function(data,err){ 
+<pre><code class="language-js">db.query("DELETE COLUMN ["mail"] TABLE user;",function(data,err){ 
     console.log(data); 
 });</code></pre>
 <h2>Result:</h2>

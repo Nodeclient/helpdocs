@@ -305,6 +305,7 @@ INSTALLER NOT READY YET
 <code class="language-javascript"> 
 // MIRA-DB EXPRESS REMOTE DATABASE
 var bodyParser = require(&#x22;body-parser&#x22;);
+
 // Express Build ver. (express@5.0.0-alpha.7)
 var express = require(&#x27;express&#x27;);
 var mira = require(&#x27;mira-db&#x27;);
@@ -314,10 +315,12 @@ var USR_PERM = {};
 
 // SET YOUR STORAGE FOLDER
 var DB_DIR = &#x22;./data&#x22;;
+// MEMORY LIMIT
+var MAX_MEMORY = &#x22;100MB&#x22;;
 
 app.use(express.static(&#x27;public&#x27;));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json({limit: MAX_MEMORY, extended: true}));
+app.use(bodyParser.urlencoded({limit: MAX_MEMORY, extended: true }));
 
 app.get(&#x27;/&#x27;, function (req, res, next) {
     res.sendFile( process.cwd()+&#x27;/public/index.html&#x27;);
@@ -354,9 +357,16 @@ app.post(&#x27;/query&#x27;, function (req, res, next) {
             res.status(500).send([false, &#x22;SERVER_ERROR&#x22;, &#x22;INVALID CONF FILE&#x22;, 100]);
     }
 });
+
 // YOU CAN CHANGE THE PORT
 var server = app.listen(8123);
-console.log(&#x22;MIRA-DB 1.0.25 - PORT:8123&#x22;)
+app.use((err, req, res, next) =&#x3E; {
+    if (err){
+         res.status(500).send([false, &#x22;SERVER_ERROR&#x22;, &#x22;SERVER ERROR&#x22;, 100]);    
+    }
+});
+
+console.table([{ Proccess: &#x27;MIRA-DB&#x27;,Version: &#x27;1.0.29&#x27; ,Port:&#x27;8123&#x27;}]);
 
 </code></pre>
 </div>

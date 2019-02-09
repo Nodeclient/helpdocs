@@ -25,8 +25,11 @@
 
 	  $( "#docs" ).click(function() {
 		window.location.href = "https://miradb.com/docs";
-	  });
-
+		});
+		
+	  $( "#serv" ).click(function() {
+			window.location.href = "http://35.246.224.131:8123";
+		});
 
   	/* --------------------------------------------------- */
 	/*  Placeholder Plugin Settings

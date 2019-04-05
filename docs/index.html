@@ -146,37 +146,30 @@ sudo rm miradb-x86-1.0.30.tar
 <h2>Terminal Command</h2>	
 <code class="language-Bash">miradb (start | stop | restart)</code>
 </div>
-
 <div id="OSDEB" class="section-block os" style="display:none">
 <h2>Debian-based Linux distributions</h2>
 <p></p>
-<h5>DEBIAN-INSTALL-x64</h5>
+<h5>ARCH-INSTALL-x64</h5>
 <pre><code class="language-Bash">
-https://github.com/Nodeclient/Mira-DB/tree/linux
-
+  git clone https://aur.archlinux.org/miradb.git
+  cd miradb
+  makepkg -siCc
+  
+  sh /usr/bin/miradb/service                                   
 </code></pre>
-<h5>DEBIAN-INSTALL-x86</h5>
-<pre><code class="language-Bash">
-https://github.com/Nodeclient/Mira-DB/tree/linux 
 
-</code></pre>
 <h2>Terminal Command</h2>	
 <code class="language-Bash">miradb (start | stop | restart)</code>
 </div>
 
 <div id="OSRPM" class="section-block os" style="display:none">
-<h2>RPM-based Linux distributions</h2>
+<h2>DEBIAN Linux distributions</h2>
 <p></p>
-<h5>RPM-INSTALL-x64</h5>
+<h5>DEB-INSTALL-x64</h5>
 <pre><code class="language-Bash">
-https://github.com/Nodeclient/Mira-DB/tree/linux  
-                                            
+NOT READY                                
 </code></pre>
-<h5>RPM-INSTALL-x86</h5>
-<pre><code class="language-Bash">
-https://github.com/Nodeclient/Mira-DB/tree/linux   
-                                                    
-</code></pre>
+	
 <h2>Terminal Command</h2>	
 <code class="language-Bash">miradb (start | stop | restart)</code>
 </div>
